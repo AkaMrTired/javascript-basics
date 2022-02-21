@@ -1,5 +1,11 @@
 const getNthElement = (index, array) => {
-  // your code here
+
+  const findNth = (index, arr) => {
+    if(index > arr.length) {
+        index = index % arr.length;
+    }
+
+    return arr[index]
 };
 
 const arrayToCSVString = array => {
